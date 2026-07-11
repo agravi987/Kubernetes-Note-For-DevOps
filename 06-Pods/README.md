@@ -281,3 +281,13 @@ kubectl get pods
 | **Never** | Create bare Pods in production |
 
 > *"Ravi, Pods are the atoms of Kubernetes. Everything is built on top of them. You don't manage atoms directly though — you use Deployments and ReplicaSets to manage Pods for you. That's coming up next! 🔜"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 05: Labels & Selectors](../05-Labels-and-Selectors/README.md)** | [📚 Home](../README.md) | **[Next: 07: ReplicaSets →](../07-ReplicaSets/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

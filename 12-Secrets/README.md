@@ -241,3 +241,13 @@ spec:
 | **Danger** | Don't commit to Git, don't trust base64 |
 
 > *"Ravi, Secrets are a good start, but they're not bulletproof. In real production, use a dedicated secret manager like HashiCorp Vault. For now, remember: base64 ≠ encryption! 🔐"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 11: ConfigMaps](../11-ConfigMaps/README.md)** | [📚 Home](../README.md) | **[13: Volumes →](../13-Volumes/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

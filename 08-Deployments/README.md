@@ -353,3 +353,13 @@ kubectl autoscale deployment web --min=3 --max=10 --cpu-percent=80
 | **Rule #1** | Always use Deployments, never bare Pods |
 
 > *"Ravi, Deployments are your bread and butter in Kubernetes. You'll create hundreds of them. Master the rollout commands, always set resource limits, and NEVER use `:latest` in production. You're doing great! 🎉"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 07: ReplicaSets](../07-ReplicaSets/README.md)** | [📚 Home](../README.md) | **[Next: 09: Services →](../09-Services/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

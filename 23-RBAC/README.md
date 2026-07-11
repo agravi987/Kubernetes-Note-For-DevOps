@@ -248,3 +248,13 @@ kubectl create rolebinding pod-reader \
 | **ServiceAccount** | Namespace | Identity for pods |
 
 > *"Ravi, RBAC is your first line of defense in Kubernetes. Start with no access, add permissions as needed. NEVER start with full access and try to remove it later. Security first! 🔐"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 22: Scheduling](../22-Scheduling/README.md)** | [📚 Home](../README.md) | **[24: Network Policies →](../24-Network-Policies/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

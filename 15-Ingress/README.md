@@ -217,3 +217,13 @@ The Ingress handles:
 | **Prerequisite** | Must install Ingress Controller separately |
 
 > *"Ravi, Ingress is the front door to your cluster for web traffic. Without it, you'd need a separate LoadBalancer for every service — expensive and messy! Ingress consolidates everything behind one entry point. 🚪"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 14: PV & PVC](../14-Persistent-Volumes-and-PVC/README.md)** | [📚 Home](../README.md) | **[16: StatefulSets →](../16-StatefulSets/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

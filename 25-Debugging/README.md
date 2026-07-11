@@ -285,3 +285,13 @@ kubectl describe pod <pod-name> | grep -A10 "Limits"
 | 5 | `kubectl get events` | Cluster-wide issues |
 
 > *"Ravi, remember this debugging flow: get → describe → logs → exec. It solves 90% of issues. The Events section in `describe` is your best friend! 🔍"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 24: Network Policies](../24-Network-Policies/README.md)** | [📚 Home](../README.md) | **[26: Best Practices →](../26-Best-Practices/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

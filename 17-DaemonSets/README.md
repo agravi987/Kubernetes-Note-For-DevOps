@@ -164,3 +164,13 @@ DaemonSet behavior:
 | **Not for** | Application workloads |
 
 > *"Ravi, DaemonSets are the unsung heroes of Kubernetes. They run the infrastructure that makes everything else work — logging, monitoring, networking. You rarely create them as a developer, but you'll see them everywhere! 👥"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 16: StatefulSets](../16-StatefulSets/README.md)** | [📚 Home](../README.md) | **[18: Jobs & CronJobs →](../18-Jobs-and-CronJobs/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

@@ -206,3 +206,13 @@ kubectl create job manual-backup --from=cronjob/nightly-backup
 | **TTL** | Auto-cleanup completed jobs |
 
 > *"Ravi, Jobs and CronJobs are the 'set it and forget it' tools of Kubernetes. Database migrations, backups, reports — anything that runs once and finishes. Just remember: `restartPolicy: Never`! 💼"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 17: DaemonSets](../17-DaemonSets/README.md)** | [📚 Home](../README.md) | **[19: Probes →](../19-Probes/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

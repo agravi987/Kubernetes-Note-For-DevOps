@@ -347,3 +347,13 @@ metadata:
 | **Golden Rule** | Deployment selector MUST match Pod template labels |
 
 > *"Ravi, Labels and Selectors are deceptively simple but incredibly powerful. Every Kubernetes resource uses them. Master this concept and everything else becomes easier! 💪"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 04: Architecture](../04-Architecture/README.md)** | [📚 Home](../README.md) | **[Next: 06: Pods →](../06-Pods/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

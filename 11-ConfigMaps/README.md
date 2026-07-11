@@ -192,3 +192,13 @@ spec:
 | **Update** | Volume mounts auto-update; env vars need restart |
 
 > *"Ravi, the golden rule: separate config from code. ConfigMaps make this easy. Your future self (and your team) will thank you! 🙏"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 10: Namespaces](../10-Namespaces/README.md)** | [📚 Home](../README.md) | **[12: Secrets →](../12-Secrets/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

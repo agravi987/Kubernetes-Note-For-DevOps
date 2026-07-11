@@ -423,3 +423,13 @@ kubectl label pod my-pod env-
 | `kubectl config` | Manage kubeconfig |
 
 > *"Ravi, kubectl is your best friend in the Kubernetes world. Use it every day, and it'll become second nature. Pro tip: set up aliases — your fingers will thank you! 🙏"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 02: Installation](../02-Installation/README.md)** | [📚 Home](../README.md) | **[Next: 04: Architecture →](../04-Architecture/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

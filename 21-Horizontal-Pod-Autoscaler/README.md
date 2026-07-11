@@ -214,3 +214,13 @@ behavior:
 | **Behavior** | Fine-tune scale up/down speed |
 
 > *"Ravi, HPA is how you handle traffic spikes without losing sleep. Set it up with reasonable targets, configure stabilization windows, and let Kubernetes do the heavy lifting! 📈"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 20: Resource Management](../20-Resource-Management/README.md)** | [📚 Home](../README.md) | **[22: Scheduling →](../22-Scheduling/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

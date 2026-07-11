@@ -209,3 +209,13 @@ Deployment (wraps ReplicaSet):
 | **Owner chain** | Deployment → ReplicaSet → Pod |
 
 > *"Ravi, think of ReplicaSets as the managers. They don't do the work themselves (that's the pods), and they don't deploy updates (that's the Deployment). They just make sure the right number of workers are always on the job! 👷"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 06: Pods](../06-Pods/README.md)** | [📚 Home](../README.md) | **[Next: 08: Deployments →](../08-Deployments/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

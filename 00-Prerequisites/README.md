@@ -276,3 +276,13 @@ Ravi, make sure you can do all of these before moving on:
 | **Tools** | kubectl + a cluster = hands-on practice |
 
 > *"Ravi, if you've got these basics down, you're ready to dive into Kubernetes. Let's go! 🚀"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| *(Start here!)* | [📚 Home](../README.md) | **[Next: 01: Introduction to Kubernetes →](../01-Introduction/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

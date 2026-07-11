@@ -190,3 +190,13 @@ If mysql-0 dies and is recreated → same PVC → same data! ✅
 | **Prerequisite** | Headless Service required |
 
 > *"Ravi, StatefulSets bring order to chaos. When your database pods need to know who they are, keep their data, and join/leave in order — StatefulSets handle all of it. 🐘"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 15: Ingress](../15-Ingress/README.md)** | [📚 Home](../README.md) | **[17: DaemonSets →](../17-DaemonSets/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

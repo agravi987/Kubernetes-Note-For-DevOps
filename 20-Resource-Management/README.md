@@ -213,3 +213,13 @@ spec:
 | **LimitRange** | Default requests/limits per container |
 
 > *"Ravi, Resource Management is what separates a toy cluster from a production one. ALWAYS set requests and limits. Your future on-call self will thank you at 3 AM! 📊"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 19: Probes](../19-Probes/README.md)** | [📚 Home](../README.md) | **[21: HPA →](../21-Horizontal-Pod-Autoscaler/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

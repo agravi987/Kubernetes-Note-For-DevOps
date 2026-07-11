@@ -200,3 +200,13 @@ spec:
 | **Taints** | Intermediate | Reserve nodes |
 
 > *"Ravi, for most apps, nodeSelector is enough. Use podAntiAffinity to spread replicas. Only dive into advanced affinity when you have specific requirements. Keep it simple! 📋"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 21: HPA](../21-Horizontal-Pod-Autoscaler/README.md)** | [📚 Home](../README.md) | **[23: RBAC →](../23-RBAC/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

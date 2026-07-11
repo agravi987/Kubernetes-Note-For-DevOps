@@ -314,3 +314,13 @@ spec:
 | **ExternalName** | External (CNAME) | ✅ | External service ref |
 
 > *"Ravi, Services are the glue that connects everything. Pods come and go, but Services stay constant. Think of them as a phone number that always routes to whoever currently has it! 📱"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 08: Deployments](../08-Deployments/README.md)** | [📚 Home](../README.md) | **[Next: 10: Namespaces →](../10-Namespaces/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

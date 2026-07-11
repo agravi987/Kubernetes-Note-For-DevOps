@@ -264,3 +264,13 @@ kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 | **Always allow** | DNS (port 53) in egress rules |
 
 > *"Ravi, Network Policies are your cluster's firewall. Start with default-deny, add specific allows, and always permit DNS. This is non-negotiable in production! 🔒"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 23: RBAC](../23-RBAC/README.md)** | [📚 Home](../README.md) | **[25: Debugging →](../25-Debugging/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

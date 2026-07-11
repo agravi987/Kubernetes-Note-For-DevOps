@@ -342,3 +342,13 @@ When you install Kubernetes, these components get set up automatically:
 | **Managed (EKS/GKE/AKS)** | Real production workloads |
 
 > *"Ravi, for now just pick Minikube or Docker Desktop and get a cluster running. We can always move to more advanced setups later. The important thing is to START! 🚀"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 01: Introduction](../01-Introduction/README.md)** | [📚 Home](../README.md) | **[Next: 03: kubectl →](../03-kubectl/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

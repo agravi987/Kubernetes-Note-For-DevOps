@@ -301,3 +301,13 @@ This loop runs **constantly** — K8s is always checking and adjusting!
 | **Control loop** | Always compares desired vs actual state |
 
 > *"Ravi, Kubernetes is basically the operating system for the cloud. Just like your laptop OS manages apps, files, and hardware — Kubernetes manages containers, networking, and servers. Once this clicks, everything else makes sense! 💡"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 00: Prerequisites](../00-Prerequisites/README.md)** | [📚 Home](../README.md) | **[Next: 02: Installation →](../02-Installation/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

@@ -238,3 +238,13 @@ volumeMounts:
 | **PVC** | ✅ | Persistent data |
 
 > *"Ravi, Volumes are the bridge between ephemeral pods and persistent data. For quick sharing between containers, use emptyDir. For anything that must survive, use PVC. That's coming up next! 🗄️"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 12: Secrets](../12-Secrets/README.md)** | [📚 Home](../README.md) | **[14: Persistent Volumes & PVC →](../14-Persistent-Volumes-and-PVC/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

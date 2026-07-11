@@ -257,3 +257,13 @@ Startup Probe fails:
 | **Startup** | Finished starting? | Kill container | Slow-starting apps |
 
 > *"Ravi, Probes are the difference between a fragile app and a resilient one. Without them, Kubernetes is flying blind. With them, it can detect and fix problems automatically. ALWAYS set probes in production! 🏥"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 18: Jobs & CronJobs](../18-Jobs-and-CronJobs/README.md)** | [📚 Home](../README.md) | **[20: Resource Management →](../20-Resource-Management/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

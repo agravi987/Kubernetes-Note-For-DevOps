@@ -250,3 +250,13 @@ spec:
 | **Best practice** | Never use `default` namespace |
 
 > *"Ravi, Namespaces are like organizing files into folders. Without them, your cluster becomes a messy desktop with 1000 icons. Keep it organized from day one! 📂"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 09: Services](../09-Services/README.md)** | [📚 Home](../README.md) | **[11: ConfigMaps →](../11-ConfigMaps/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

@@ -243,3 +243,13 @@ kubectl get storageclass
 | **RWO/ROX/RWX** | Access modes |
 
 > *"Ravi, PV and PVC are the yin and yang of Kubernetes storage. PVC asks, PV provides. For production, always use dynamic provisioning with StorageClasses and set reclaimPolicy: Retain for anything important! 🗄️"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 13: Volumes](../13-Volumes/README.md)** | [📚 Home](../README.md) | **[15: Ingress →](../15-Ingress/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!

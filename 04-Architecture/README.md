@@ -432,3 +432,13 @@ kubectl ──→ API Server ──→ etcd (store)
 | **Container Runtime** | Worker Node | Actually runs containers |
 
 > *"Ravi, this is the most important chapter for interviews. Read it twice, draw the diagram yourself, and be able to explain each component. You'll thank yourself later! 🙏"*
+
+---
+
+## 🔗 Navigation
+
+| ← Previous | Home | Next → |
+|:----------:|:----:|:------:|
+| **[← 03: kubectl](../03-kubectl/README.md)** | [📚 Home](../README.md) | **[Next: 05: Labels & Selectors →](../05-Labels-and-Selectors/README.md)** |
+
+> 💡 **Tip:** Open the next topic in a new tab so you can come back to this one anytime!
