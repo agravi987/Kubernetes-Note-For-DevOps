@@ -100,17 +100,51 @@ Welcome to your personal Kubernetes learning repository. These notes are designe
 
 ## 🗺️ Visual Learning Path
 
-```
-Week 1 🌱        Week 2 ⚡        Week 3 💾        Week 4 🏥        Week 5 🎯
-───────────     ───────────     ───────────     ───────────     ───────────
-00 Prereqs      06 Pods         11 ConfigMaps    19 Probes       21 HPA
-01 Intro        07 ReplicaSets  12 Secrets       20 Resources    22 Scheduling
-02 Install      08 Deployments  13 Volumes       24 NetPolicy    23 RBAC
-03 kubectl      09 Services     14 PV/PVC                        25 Debugging
-04 Architecture 10 Namespaces   15 Ingress                       26 Best Practices
-05 Labels                       16 StatefulSets                  27 Interview Qs
-                               17 DaemonSets
-                               18 Jobs/CronJobs
+```mermaid
+graph LR
+    subgraph W1["Week 1 - Foundation"]
+        A0[00 Prereqs]
+        A1[01 Intro]
+        A2[02 Install]
+        A3[03 kubectl]
+        A4[04 Architecture]
+        A5[05 Labels]
+    end
+    subgraph W2["Week 2 - Core Workloads"]
+        B0[06 Pods]
+        B1[07 ReplicaSets]
+        B2[08 Deployments]
+        B3[09 Services]
+        B4[10 Namespaces]
+    end
+    subgraph W3["Week 3 - Config & Storage"]
+        C0[11 ConfigMaps]
+        C1[12 Secrets]
+        C2[13 Volumes]
+        C3[14 PV/PVC]
+        C4[15 Ingress]
+    end
+    subgraph W4["Week 4 - Advanced Workloads"]
+        D0[16 StatefulSets]
+        D1[17 DaemonSets]
+        D2[18 Jobs/CronJobs]
+        D3[19 Probes]
+        D4[20 Resources]
+    end
+    subgraph W5["Week 5 - Operations & Security"]
+        E0[21 HPA]
+        E1[22 Scheduling]
+        E2[23 RBAC]
+        E3[25 Debugging]
+        E4[26 Best Practices]
+        E5[27 Interview Qs]
+    end
+    W1 --> W2 --> W3 --> W4 --> W5
+    style W1 fill:#2d6a4f,color:#fff
+    style W2 fill:#40916c,color:#fff
+    style W3 fill:#52b788,color:#fff
+    style W4 fill:#74c69d,color:#000
+    style W5 fill:#95d5b2,color:#000
 ```
 
 ---

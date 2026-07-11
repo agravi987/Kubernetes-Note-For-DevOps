@@ -169,6 +169,29 @@ volumes:
 
 ### Volume Lifecycle
 
+```mermaid
+graph TB
+    subgraph Ephemeral["Ephemeral Volumes"]
+        E1["Pod Created"] --> E2["emptyDir Created"]
+        E2 --> E3["Containers Mount"]
+        E3 --> E4["Pod Deleted"]
+        E4 --> E5["Volume GONE 💀"]
+    end
+    subgraph Persistent["Persistent Volumes"]
+        P1["Pod Created"] --> P2["PVC Binds to PV"]
+        P2 --> P3["Containers Mount"]
+        P3 --> P4["Pod Deleted"]
+        P4 --> P5["PVC & PV Survive ✅"]
+        P5 --> P6["New Pod Mounts Same Data"]
+    end
+    style Ephemeral fill:#fef2f2,color:#000
+    style Persistent fill:#f0fdf4,color:#000
+    style E5 fill:#ef4444,color:#fff
+    style P5 fill:#10b981,color:#fff
+```
+
+### Mount Paths
+
 ```
 emptyDir:
   Pod created → Volume created (empty) → Container mounts → Pod deleted → Volume GONE

@@ -87,7 +87,30 @@ spec:
 
 ## 🧠 Important Concepts
 
-### Job Completion Modes
+### Job vs CronJob Flow
+
+```mermaid
+graph TB
+    subgraph Job["Job - Run Once"]
+        J1["Job Created"] --> J2["Pod Starts"]
+        J2 --> J3{"Task Complete?"}
+        J3 -->|"Yes ✅"| J4["Pod Terminated"]
+        J3 -->|"No ❌"| J5{"Retries Left?"}
+        J5 -->|"Yes"| J2
+        J5 -->|"No"| J6["Job Failed 💀"]
+    end
+    subgraph CronJob["CronJob - Run on Schedule"]
+        C1["Cron Trigger ⏰"] --> C2["Creates Job"]
+        C2 --> C3["Job Runs"]
+        C3 --> C4["Wait for Next Schedule"]
+        C4 --> C1
+    end
+    style J4 fill:#10b981,color:#fff
+    style J6 fill:#ef4444,color:#fff
+    style C1 fill:#f59e0b,color:#000
+```
+
+### CronJob Concurrency Policies
 
 ```yaml
 spec:

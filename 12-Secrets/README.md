@@ -113,6 +113,22 @@ kubectl get secret db-secret -o jsonpath='{.data.DB_PASSWORD}' | base64 --decode
 
 ## 🧠 Important Concepts
 
+### Secret Security Levels
+
+```mermaid
+graph TB
+    A["Secret Created"] --> B{"Security Level?"}
+    B -->|"Default"| C["Base64 Encoded<br/>⚠️ NOT encryption"]
+    B -->|"Production"| D["Encrypted at Rest<br/>🔒 etcd encryption"]
+    B -->|"Best Practice"| E["External Secret Manager<br/>Vault / AWS SM"]
+    C -->|"Anyone with access<br/>can decode"| F["⚠️ Vulnerable"]
+    D -->|"RBAC + encryption"| G["✅ Safer"]
+    E -->|"Managed by external<br/>service"| G2["✅ Safest"]
+    style C fill:#ef4444,color:#fff
+    style D fill:#f59e0b,color:#000
+    style E fill:#10b981,color:#fff
+```
+
 ### Using Secrets in Pods
 
 #### 1. Environment Variables

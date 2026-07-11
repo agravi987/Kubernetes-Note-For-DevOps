@@ -276,54 +276,72 @@ Step 10: Application is running! 🎉
 
 ## 🖥️ Complete Architecture Diagram
 
+```mermaid
+graph TB
+    subgraph CP["Control Plane - The Brain"]
+        API["API Server :6443"]
+        ETCD["etcd 💾"]
+        SCHED["Scheduler 📋"]
+        CTRL["Controller Manager 🔄"]
+        API <--> ETCD
+        API --> SCHED
+        API --> CTRL
+    end
+    subgraph WN1["Worker Node 1 - The Muscle"]
+        KL1["kubelet"]
+        KP1["kube-proxy"]
+        CR1["containerd"]
+        subgraph Pods1["Pods"]
+            PA["Pod A<br/>App"]
+            PB["Pod B<br/>App"]
+            PC["Pod C<br/>App"]
+        end
+        KL1 --> CR1
+        KP1 --> Pods1
+    end
+    subgraph WN2["Worker Node 2 - The Muscle"]
+        KL2["kubelet"]
+        KP2["kube-proxy"]
+        CR2["containerd"]
+        subgraph Pods2["Pods"]
+            PD["Pod D<br/>App"]
+            PE["Pod E<br/>App"]
+        end
+        KL2 --> CR2
+        KP2 --> Pods2
+    end
+    API --> KL1
+    API --> KL2
+    style CP fill:#1a1a2e,color:#fff
+    style WN1 fill:#16213e,color:#fff
+    style WN2 fill:#16213e,color:#fff
 ```
-┌──────────────────────────────────────────────────────────────┐
-│                     KUBERNETES CLUSTER                       │
-│                                                              │
-│  ┌───────────────────── CONTROL PLANE ─────────────────────┐ │
-│  │                                                         │ │
-│  │  ┌─────────────┐          ┌──────────┐                 │ │
-│  │  │ API Server  │◄────────►│   etcd   │                 │ │
-│  │  │  :6443      │          │  💾 DB   │                 │ │
-│  │  └──────┬──────┘          └──────────┘                 │ │
-│  │         │                                               │ │
-│  │  ┌──────┴──────┐          ┌──────────────────────┐     │ │
-│  │  │  Scheduler  │          │ Controller Manager   │     │ │
-│  │  │  📋         │          │  🔄                  │     │ │
-│  │  └─────────────┘          └──────────────────────┘     │ │
-│  └─────────────────────────────────────────────────────────┘ │
-│                                                              │
-│  ┌────────────────── WORKER NODE 1 ────────────────────────┐ │
-│  │  ┌──────────┐  ┌───────────┐  ┌──────────────┐        │ │
-│  │  │ kubelet  │  │ kube-proxy │  │ containerd   │        │ │
-│  │  │          │  │           │  │ (Runtime)     │        │ │
-│  │  └────┬─────┘  └───────────┘  └──────┬───────┘        │ │
-│  │       │                               │                 │ │
-│  │  ┌────┴───────────────────────────────┴──────────────┐ │ │
-│  │  │  ┌─────────┐  ┌─────────┐  ┌─────────┐          │ │ │
-│  │  │  │  Pod A  │  │  Pod B  │  │  Pod C  │          │ │ │
-│  │  │  │ ┌─────┐ │  │ ┌─────┐ │  │ ┌─────┐ │          │ │ │
-│  │  │  │ │App  │ │  │ │App  │ │  │ │App  │ │          │ │ │
-│  │  │  │ └─────┘ │  │ └─────┘ │  │ └─────┘ │          │ │ │
-│  │  │  └─────────┘  └─────────┘  └─────────┘          │ │ │
-│  │  └──────────────────────────────────────────────────┘ │ │
-│  └─────────────────────────────────────────────────────────┘ │
-│                                                              │
-│  ┌────────────────── WORKER NODE 2 ────────────────────────┐ │
-│  │  ┌──────────┐  ┌───────────┐  ┌──────────────┐        │ │
-│  │  │ kubelet  │  │ kube-proxy │  │ containerd   │        │ │
-│  │  └────┬─────┘  └───────────┘  └──────┬───────┘        │ │
-│  │       │                               │                 │ │
-│  │  ┌────┴───────────────────────────────┴──────────────┐ │ │
-│  │  │  ┌─────────┐  ┌─────────┐                        │ │ │
-│  │  │  │  Pod D  │  │  Pod E  │                        │ │ │
-│  │  │  │ ┌─────┐ │  │ ┌─────┐ │                        │ │ │
-│  │  │  │ │App  │ │  │ │App  │ │                        │ │ │
-│  │  │  │ └─────┘ │  │ └─────┘ │                        │ │ │
-│  │  │  └─────────┘  └─────────┘                        │ │ │
-│  │  └──────────────────────────────────────────────────┘ │ │
-│  └─────────────────────────────────────────────────────────┘ │
-└──────────────────────────────────────────────────────────────┘
+
+### How kubectl Deploy Flow Works
+
+```mermaid
+sequenceDiagram
+    participant U as You (kubectl)
+    participant A as API Server
+    participant E as etcd
+    participant CM as Controller Manager
+    participant S as Scheduler
+    participant K as kubelet
+    participant C as Container Runtime
+
+    U->>A: kubectl apply -f deploy.yaml
+    A->>E: Store desired state
+    A-->>U: Created!
+    CM->>A: Detects new Deployment
+    CM->>E: Creates ReplicaSet
+    CM->>E: Creates Pods (desired count)
+    S->>A: Detects unassigned Pods
+    S->>E: Assigns Pods to Nodes
+    K->>A: Watches for assigned Pods
+    K->>C: Start containers
+    C->>K: Containers running
+    K->>A: Report Pod status
+    Note over U,C: Application is now running! 🎉
 ```
 
 ---

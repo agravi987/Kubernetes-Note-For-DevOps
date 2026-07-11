@@ -111,35 +111,38 @@ spec:
 
 ## 🔄 How It Works
 
-```
-Admin creates PV ──→ Available in cluster
-                         │
-User creates PVC ──→ Kubernetes finds matching PV
-                         │
-PVC bound to PV ──→ Pod uses PVC ──→ Data written to PV
-                         │
-Pod deleted ──→ PVC and PV survive ──→ Data intact! ✅
-```
+```mermaid
+sequenceDiagram
+    participant A as Admin
+    participant PV as PersistentVolume
+    participant PVC as PersistentVolumeClaim
+    participant P as Pod
 
-### Dynamic Provisioning (Automated)
-
-```
-Without dynamic provisioning:
-  Admin creates PV manually → PVC binds to it
-
-With dynamic provisioning:
-  PVC requests storage → Provisioner automatically creates PV!
-
-  PVC: "I need 5Gi of storage"
-       ↓
-  Provisioner: "Here's a new 5Gi PV!" (creates it on the fly)
+    A->>PV: Create PV (5Gi, RWO)
+    Note over PV: Available in cluster
+    PVC->>PVC: Request 2Gi storage
+    PVC->>PV: Bind to matching PV
+    Note over PVC,PV: PVC Bound to PV ✅
+    P->>PVC: Reference PVC
+    PVC->>PV: Mount storage
+    Note over P: Data written to PV
+    P->>P: Pod deleted
+    Note over PVC,PV: PVC & PV survive! ✅
+    P2->>PVC: New pod references same PVC
+    PVC->>PV: Same data accessible!
 ```
 
-> 🚂 **Joke:** PV and PVC are like Indian train reservations — the PV is the confirmed seat, the PVC is your ticket. You don't need to know which coach or seat number, you just need to know you have a confirmed berth! Now please don't ask for side-lower.
+### Dynamic Provisioning Flow
 
----
-
-## 🧠 Important Concepts
+```mermaid
+graph LR
+    A["PVC Request<br/>I need 5Gi"] --> B["Provisioner<br/>(AWS EBS, GCE, etc.)"]
+    B --> C["Auto-creates PV<br/>5Gi storage"]
+    C --> D["PVC binds to PV"]
+    D --> E["Pod mounts PVC"]
+    style B fill:#8b5cf6,color:#fff
+    style C fill:#10b981,color:#fff
+```
 
 ### Access Modes
 

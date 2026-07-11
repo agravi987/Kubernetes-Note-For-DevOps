@@ -135,6 +135,23 @@ spec:
 
 ## 🧠 Important Concepts
 
+```mermaid
+stateDiagram-v2
+    [*] --> Pending: Pod Created
+    Pending --> Running: Scheduled & Containers Started
+    Running --> Succeeded: All containers exited 0
+    Running --> Failed: At least one container failed
+    Running --> CrashLoopBackOff: Container keeps crashing
+    Running --> ImagePullBackOff: Cannot pull image
+    CrashLoopBackOff --> Running: kubelet restarts
+    Failed --> [*]: Pod terminated
+    Succeeded --> [*]: Pod terminated
+
+    note right of Pending: Waiting for scheduler\nor pulling images
+    note right of Running: At least one\ncontainer running
+    note right of CrashLoopBackOff: Backoff increases:\n10s → 20s → 40s → 5min
+```
+
 ### Pod IP Address
 
 ```

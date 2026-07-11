@@ -216,6 +216,25 @@ Kubernetes
 
 ## 🧠 Important Concepts
 
+```mermaid
+graph TB
+    subgraph Evolution["Evolution: Single Server to Kubernetes"]
+        A["Single Server"] -->|"Crashes = Downtime"| B["Containers 🐳"]
+        B -->|"Too many to manage"| C["Kubernetes 🎯"]
+    end
+    subgraph K8sPower["What Kubernetes Does"]
+        D["Desired State via YAML"] --> E["Control Loop"]
+        E --> F{"Actual = Desired?"}
+        F -->|"Yes"| G["Do Nothing ✅"]
+        F -->|"No"| H["Take Action 🔄"]
+        H --> I["Create/Delete/Update Pods"]
+        I --> E
+    end
+    style A fill:#e63946,color:#fff
+    style B fill:#f4a261,color:#000
+    style C fill:#2a9d8f,color:#fff
+```
+
 ### Declarative vs Imperative
 
 ```

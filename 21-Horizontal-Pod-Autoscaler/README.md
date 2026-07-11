@@ -77,12 +77,42 @@ kubectl autoscale deployment web-deployment \
 
 ## 🔄 How It Works
 
+```mermaid
+sequenceDiagram
+    participant M as Metrics Server
+    participant H as HPA Controller
+    participant D as Deployment
+    participant P as Pods
+
+    loop Every 15 seconds
+        M->>M: Collect CPU/memory data
+    end
+    loop Every 30 seconds
+        H->>M: Get current metrics
+        M-->>H: CPU: 80%, Memory: 60%
+        H->>H: Compare with target (70%)
+        alt CPU > Target
+            H->>D: Scale UP (add replicas)
+            D->>P: Create new Pods
+        else CPU < Target
+            H->>D: Scale DOWN (remove replicas)
+            D->>P: Terminate Pods
+        else CPU == Target
+            H->>H: Do nothing
+        end
+    end
 ```
-1. Metrics Server collects CPU/memory data every 15s
-2. HPA controller checks metrics every 30s (default)
-3. Compares current utilization with target utilization
-4. If CPU > target → Scale UP
-5. If CPU < target → Scale DOWN (wait 5 min cooldown)
+
+### Scaling Calculation Example
+
+```mermaid
+graph TB
+    A["Current CPU: 140%"] --> B["Target CPU: 70%"]
+    B --> C["Current Replicas: 2"]
+    C --> D["Formula:<br/>ceil(2 × (140/70))"]
+    D --> E["= ceil(4) = 4"]
+    E --> F["HPA scales 2 → 4 pods 🚀"]
+    style F fill:#10b981,color:#fff
 ```
 
 ### Scaling Calculation

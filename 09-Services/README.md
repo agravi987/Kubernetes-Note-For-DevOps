@@ -43,16 +43,44 @@ With Service:
 
 ## 🔄 How It Works
 
+```mermaid
+graph LR
+    C["Client"] --> S["Service<br/>10.96.0.100:80"]
+    S -->|"selector: app=web"| P1["Pod 1<br/>10.244.0.5"]
+    S -->|"selector: app=web"| P2["Pod 2<br/>10.244.1.3"]
+    S -->|"selector: app=web"| P3["Pod 3<br/>10.244.2.7"]
+    style S fill:#f59e0b,color:#000
+    style P1 fill:#10b981,color:#fff
+    style P2 fill:#10b981,color:#fff
+    style P3 fill:#10b981,color:#fff
 ```
-Client sends request to Service IP
-    ↓
-Service checks pod selector (e.g., app=web)
-    ↓
-Finds all matching pods
-    ↓
-Load balances traffic across them
-    ↓
-Request reaches one of the pods
+
+### Service Types Overview
+
+```mermaid
+graph TB
+    subgraph ClusterIP["ClusterIP - Internal Only"]
+        CI["Service"] -->|"internal only"| CP1["Pod"]
+        CI --> CP2["Pod"]
+    end
+    subgraph NP["NodePort - External via Node IP:Port"]
+        EXT1["External User"] -->|"any-node:30080"| NP1["Service"]
+        NP1 --> NPP1["Pod"]
+        NP1 --> NPP2["Pod"]
+    end
+    subgraph LB["LoadBalancer - Cloud LB"]
+        EXT2["Internet"] -->|"Cloud LB"| LB1["Service"]
+        LB1 --> LBP1["Pod"]
+        LB1 --> LBP2["Pod"]
+    end
+    subgraph EN["ExternalName - CNAME"]
+        EN1["Pod inside cluster"] -->|"DNS lookup"| EN2["Service"]
+        EN2 -->|"CNAME"| EN3["db.example.com"]
+    end
+    style ClusterIP fill:#059669,color:#fff
+    style NP fill:#d97706,color:#fff
+    style LB fill:#2563eb,color:#fff
+    style EN fill:#7c3aed,color:#fff
 ```
 
 ---

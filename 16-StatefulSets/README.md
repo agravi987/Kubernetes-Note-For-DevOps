@@ -97,6 +97,53 @@ spec:
 
 ## 🧠 Important Concepts
 
+### StatefulSet vs Deployment Comparison
+
+```mermaid
+graph TB
+    subgraph Dep["Deployment - Stateless"]
+        direction LR
+        DA["web-abc123"] 
+        DB["web-xyz789"]
+        DC["web-def456"]
+    end
+    subgraph SS["StatefulSet - Stateful"]
+        direction LR
+        SA["mysql-0<br/>mysql-0.mysql.ns.svc"]
+        SB["mysql-1<br/>mysql-1.mysql.ns.svc"]
+        SC["mysql-2<br/>mysql-2.mysql.ns.svc"]
+    end
+    style Dep fill:#3b82f6,color:#fff
+    style SS fill:#8b5cf6,color:#fff
+```
+
+### Ordered Deployment Flow
+
+```mermaid
+sequenceDiagram
+    participant S as StatefulSet
+    participant P as Pods
+    participant V as Volumes
+
+    Note over S: Scale UP (0 → 3)
+    S->>P: Create mysql-0
+    P->>V: Bind PVC mysql-data-mysql-0
+    Note over P: Wait for Ready ✅
+    S->>P: Create mysql-1
+    P->>V: Bind PVC mysql-data-mysql-1
+    Note over P: Wait for Ready ✅
+    S->>P: Create mysql-2
+    P->>V: Bind PVC mysql-data-mysql-2
+    Note over P: Wait for Ready ✅
+
+    Note over S: Scale DOWN (3 → 0)
+    S->>P: Delete mysql-2 (reverse order)
+    Note over P: Wait for Terminated
+    S->>P: Delete mysql-1
+    Note over P: Wait for Terminated
+    S->>P: Delete mysql-0
+```
+
 ### Stable Network Identity
 
 ```

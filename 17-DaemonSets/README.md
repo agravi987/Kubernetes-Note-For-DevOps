@@ -90,6 +90,29 @@ spec:
 
 ## 🧠 Important Concepts
 
+### DaemonSet Behavior Across Nodes
+
+```mermaid
+graph TB
+    subgraph Cluster["Kubernetes Cluster"]
+        subgraph N1["Node 1"]
+            P1["DaemonSet Pod<br/>Fluentd"]
+        end
+        subgraph N2["Node 2"]
+            P2["DaemonSet Pod<br/>Fluentd"]
+        end
+        subgraph N3["Node 3"]
+            P3["DaemonSet Pod<br/>Fluentd"]
+        end
+        subgraph N4["New Node Joins"]
+            P4["DaemonSet Pod<br/>Fluentd<br/>Auto-deployed! 🚀"]
+        end
+    end
+    N4 -->|"Node joins cluster"| Cluster
+    style N4 fill:#10b981,color:#fff
+    style P4 fill:#f59e0b,color:#000
+```
+
 ### Node Selection
 
 ```yaml

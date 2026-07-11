@@ -110,7 +110,41 @@ spec:
 
 ## 🧠 Important Concepts
 
-### Ingress Controller
+```mermaid
+graph TB
+    U["Internet User"] -->|"HTTPS"| IC["Ingress Controller<br/>(nginx/traefik)"]
+    IC -->|"Host: app.example.com<br/>Path: /"| FS["Frontend Service"]
+    IC -->|"Host: app.example.com<br/>Path: /api"| AS["API Service"]
+    IC -->|"Host: api.example.com<br/>Path: /auth"| AUTH["Auth Service"]
+    FS --> FP1["Frontend Pod"]
+    FS --> FP2["Frontend Pod"]
+    AS --> AP1["API Pod"]
+    AS --> AP2["API Pod"]
+    AUTH --> AUTHP1["Auth Pod"]
+    style IC fill:#dc2626,color:#fff
+    style FS fill:#2563eb,color:#fff
+    style AS fill:#2563eb,color:#fff
+    style AUTH fill:#2563eb,color:#fff
+```
+
+### TLS/SSL Termination Flow
+
+```mermaid
+sequenceDiagram
+    participant C as Client (Browser)
+    participant I as Ingress Controller
+    participant S as Service
+    participant P as Pod
+
+    C->>I: HTTPS Request (encrypted)
+    I->>I: Terminates SSL 🔒
+    I->>S: HTTP Request (plain)
+    S->>P: HTTP Request
+    P->>S: HTTP Response
+    S->>I: HTTP Response
+    I->>C: HTTPS Response (encrypted)
+    Note over I: SSL Termination happens here
+```
 
 > Ingress is just a YAML definition. You need an **Ingress Controller** to actually handle the traffic!
 

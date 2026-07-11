@@ -39,6 +39,34 @@ Binding:  CONNECTION  → Links Subject to Role
 
 ## 📚 RBAC Components
 
+```mermaid
+graph TB
+    subgraph Subjects["Subjects (WHO?)"]
+        U["User<br/>(Humans)"]
+        G["Group"]
+        SA["ServiceAccount<br/>(Pods/Processes)"]
+    end
+    subgraph Roles["Roles (WHAT?)"]
+        R["Role<br/>📋 Namespace-scoped"]
+        CR["ClusterRole<br/>📋 Cluster-wide"]
+    end
+    subgraph Bindings["Bindings (CONNECT)"]
+        RB["RoleBinding<br/>🔗 Namespace"]
+        CB["ClusterRoleBinding<br/>🔗 Cluster-wide"]
+    end
+    U --> RB
+    G --> RB
+    SA --> RB
+    U --> CB
+    G --> CB
+    SA --> CB
+    RB --> R
+    CB --> CR
+    style Subjects fill:#3b82f6,color:#fff
+    style Roles fill:#8b5cf6,color:#fff
+    style Bindings fill:#f59e0b,color:#000
+```
+
 ### 1. Roles (Namespace-scoped)
 
 ```yaml

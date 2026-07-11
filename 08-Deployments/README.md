@@ -40,6 +40,21 @@ Deployment
 
 ## 🔄 How It Works
 
+```mermaid
+graph TB
+    subgraph Owner["Ownership Chain"]
+        D["Deployment"] -->|"creates & manages"| RS["ReplicaSet"]
+        RS -->|"creates & manages"| P1["Pod v1"]
+        RS -->|"creates & manages"| P2["Pod v1"]
+        RS -->|"creates & manages"| P3["Pod v1"]
+    end
+    style D fill:#2563eb,color:#fff
+    style RS fill:#3b82f6,color:#fff
+    style P1 fill:#60a5fa,color:#000
+    style P2 fill:#60a5fa,color:#000
+    style P3 fill:#60a5fa,color:#000
+```
+
 ### Rolling Update (Default Strategy)
 
 ```

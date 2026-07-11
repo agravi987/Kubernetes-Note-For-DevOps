@@ -68,7 +68,38 @@ spec:
 
 ## 🧠 Important Concepts
 
-### CPU
+### Requests vs Limits Visual
+
+```mermaid
+graph TB
+    subgraph Node["Node Resources: 2 CPU, 4Gi RAM"]
+        subgraph Pod1["Pod A - Guaranteed QoS"]
+            R1["Requests: 500m CPU, 256Mi"]
+            L1["Limits: 500m CPU, 256Mi"]
+        end
+        subgraph Pod2["Pod B - Burstable QoS"]
+            R2["Requests: 200m CPU, 128Mi"]
+            L2["Limits: 1000m CPU, 512Mi"]
+        end
+        subgraph Pod3["Pod C - BestEffort QoS"]
+            R3["No requests set"]
+            L3["No limits set"]
+        end
+    end
+    style Pod1 fill:#10b981,color:#fff
+    style Pod2 fill:#f59e0b,color:#000
+    style Pod3 fill:#ef4444,color:#fff
+```
+
+### CPU vs Memory Behavior
+
+```mermaid
+graph LR
+    A{"Container exceeds limit"} -->|"CPU"| B["Throttled 😤<br/>Slowed down, NOT killed"]
+    A -->|"Memory"| C["OOMKilled 💀<br/>Process terminated!"]
+    style B fill:#f59e0b,color:#000
+    style C fill:#ef4444,color:#fff
+```
 
 ```
 CPU is measured in "millicores" (m):

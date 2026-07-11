@@ -143,6 +143,28 @@ spec:
 
 ## 🧠 Important Concepts
 
+### Probe Decision Flow
+
+```mermaid
+flowchart TB
+    Start["Container Starts"] --> SP{"Startup Probe<br/>Configured?"}
+    SP -->|"Yes"| SP_Check["Check: /healthz"]
+    SP_Check -->|"Pass ✅"| LP{"Liveness Probe"}
+    SP_Check -->|"Fail ❌ x30"| Kill1["Kill & Restart"]
+    SP -->|"No"| LP
+    LP -->|"Pass ✅"| RP{"Readiness Probe"}
+    LP -->|"Fail ❌ x3"| Restart["K8s Restarts Container"]
+    Restart --> Start
+    RP -->|"Pass ✅"| Traffic["Receives Traffic 🌐"]
+    RP -->|"Fail ❌ x3"| Remove["Removed from Service Endpoints"]
+    Remove -->|"Pod recovers"| RP
+    style Start fill:#3b82f6,color:#fff
+    style Traffic fill:#10b981,color:#fff
+    style Restart fill:#ef4444,color:#fff
+    style Kill1 fill:#ef4444,color:#fff
+    style Remove fill:#f59e0b,color:#000
+```
+
 ### Probe Handlers
 
 ```yaml

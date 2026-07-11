@@ -121,6 +121,29 @@ spec:
 
 ## 🧠 Important Concepts
 
+### Network Policy Traffic Flow
+
+```mermaid
+graph TB
+    subgraph Without["Without Network Policies ❌"]
+        direction LR
+        WA["Pod A"] <-->|"All traffic<br/>allowed"| WB["Pod B"]
+        WA <-->|"All traffic<br/>allowed"| WC["Pod C"]
+        WB <-->|"All traffic<br/>allowed"| WC
+    end
+    subgraph With["With Network Policies ✅"]
+        direction LR
+        FA["Frontend"] -->|"✅ Port 8080"| BA["Backend"]
+        BA -->|"✅ Port 3306"| DB["Database"]
+        FA -.->|"❌ Blocked"| DB
+    end
+    style Without fill:#fef2f2,color:#000
+    style With fill:#f0fdf4,color:#000
+    style FA fill:#3b82f6,color:#fff
+    style BA fill:#f59e0b,color:#000
+    style DB fill:#ef4444,color:#fff
+```
+
 ### How Network Policies Work
 
 ```

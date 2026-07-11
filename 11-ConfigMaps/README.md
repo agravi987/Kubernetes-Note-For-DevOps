@@ -83,6 +83,25 @@ kubectl create configmap all-configs --from-file=configs/
 
 ## 🧠 Important Concepts
 
+### How ConfigMap Flows into Pods
+
+```mermaid
+graph LR
+    subgraph Creation["Create ConfigMap"]
+        A["kubectl create configmap"] --> B["ConfigMap Object"]
+        C["YAML file"] --> B
+    end
+    subgraph Usage["Use in Pods"]
+        B -->|"env vars"| D["Pod<br/>env: configMapKeyRef"]
+        B -->|"envFrom"| E["Pod<br/>envFrom: configMapRef"]
+        B -->|"volume mount"| F["Pod<br/>/etc/config/"]
+    end
+    style B fill:#8b5cf6,color:#fff
+    style D fill:#10b981,color:#fff
+    style E fill:#10b981,color:#fff
+    style F fill:#10b981,color:#fff
+```
+
 ### Ways to Use ConfigMap in Pods
 
 #### 1. Environment Variables
