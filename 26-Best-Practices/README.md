@@ -192,6 +192,8 @@ Before deploying to production, verify:
 □ PodDisruptionBudget for critical apps
 ```
 
+> 😄 **Joke:** Best practices are just accumulated wisdom from other people's mistakes. In Indian terms — your mom already told you not to touch the pressure cooker whistle. Learn from her, don't be the reason everyone else learned! 👩‍🍳😂
+
 ---
 
 ## 🎤 Interview Questions

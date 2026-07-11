@@ -155,6 +155,8 @@ This is why we use:
   └── Volumes (for persistent data)
 ```
 
+> 🎉 **Fun Fact / Joke:** Pods are like pani puri — gone the moment you create them, you can never catch the same one twice, and you need a whole system (Deployment) to keep making new ones before your guests (users) run out! 🥙
+
 ### Init Containers
 
 ```yaml

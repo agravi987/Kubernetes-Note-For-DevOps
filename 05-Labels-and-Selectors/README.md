@@ -248,6 +248,8 @@ metadata:
     prometheus.io/scrape: "true"
 ```
 
+> 😄 **Joke:** Labels are like Indian wedding invitations — you put every relation on there (cousin's wife's brother's friend), but at the end of the day, only the people with the RIGHT label get through the door! 🎉📋
+
 ### Label Selectors in Different Resources
 
 | Resource | How Selectors Are Used |

@@ -106,10 +106,12 @@ affinity:
               - key: app
                 operator: In
                 values: ["web"]
-          topologyKey: kubernetes.io/hostname
+           topologyKey: kubernetes.io/hostname
 ```
 
 > 💡 **Use anti-affinity** to spread replicas across nodes for high availability!
+
+> 😄 **Joke:** Pod Anti-Affinity is like the Indian wedding seating planner — you SPECIFICALLY make sure the two aunties who always argue are on opposite sides of the hall. No drama on the same node! 💒🪑
 
 ---
 

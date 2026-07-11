@@ -153,6 +153,8 @@ volumes:
 
 > 💡 **Use `medium: Memory`** for high-speed temp storage. Data is lost when pod restarts AND counts against memory limits.
 
+> 🍺 **Fun Fact / Joke:** Using emptyDir for important data is like writing your exam answers on a rough page during a power cut — it works until the light comes back and you realize the page flew away. Use PVC for anything that matters! ✏️💨
+
 ---
 
 ## 🧠 Important Concepts

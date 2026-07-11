@@ -100,6 +100,8 @@ nslookup my-service
 ping 10.96.0.1
 ```
 
+> 😄 **Joke:** Debugging Kubernetes without checking Events is like trying to find your phone in the dark without turning on the flashlight — you'll bump into everything, blame everyone, and it was under the cushion the whole time. CHECK EVENTS! 🔦📱
+
 ---
 
 ## 🧠 Common Issues & Solutions

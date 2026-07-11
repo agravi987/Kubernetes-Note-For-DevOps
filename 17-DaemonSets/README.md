@@ -109,6 +109,8 @@ DaemonSet behavior:
 └── Scale up → N/A (already runs on all nodes)
 ```
 
+> ☕🏢 **Fun Fact / Joke:** A DaemonSet is like a chai wallah at an IT park — you need one at EVERY floor (node), they're always running, and the day they're NOT there, productivity drops to zero!
+
 ---
 
 ## 📋 Best Practices

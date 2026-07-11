@@ -179,6 +179,8 @@ spec:
     limits.memory: "8Gi"          # Max 8Gi memory total
 ```
 
+> 🏢 **Fun Fact / Joke:** Namespaces are like Indian society flats — everyone's in the same building (cluster), but each flat (namespace) has its own rules, water timings, and that one aunty who monitors everything. 🏢👀
+
 ---
 
 ## 📋 Best Practices

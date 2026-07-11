@@ -127,6 +127,8 @@ With dynamic provisioning:
   Provisioner: "Here's a new 5Gi PV!" (creates it on the fly)
 ```
 
+> 🚂 **Joke:** PV and PVC are like Indian train reservations — the PV is the confirmed seat, the PVC is your ticket. You don't need to know which coach or seat number, you just need to know you have a confirmed berth! Now please don't ask for side-lower.
+
 ---
 
 ## 🧠 Important Concepts

@@ -79,6 +79,8 @@ metadata:
 
 > 🔥 **Ravi, remember:** 90% of Kubernetes bugs are YAML indentation issues. Always double-check!
 
+> 😄 **Joke:** Why do Indian developers love dark mode? Because light attracts bugs — and we already have enough bugs in our code after debugging YAML indentation at 2 AM while drinking our 5th chai! ☕🐛
+
 ---
 
 ## 🌐 Basic Networking Concepts

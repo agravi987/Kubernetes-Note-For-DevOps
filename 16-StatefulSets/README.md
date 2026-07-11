@@ -118,6 +118,8 @@ Scale DOWN (3 → 0): Reverse order
 Why? Databases need to sync data before new nodes join!
 ```
 
+> 🐴🥁 **Joke:** StatefulSets are like an Indian wedding baraat procession — everyone moves in ORDER, the groom (pod-0) goes first, nobody skips the line, and each person has their own designated spot. Chaos is NOT an option!
+
 ### volumeClaimTemplates
 
 ```

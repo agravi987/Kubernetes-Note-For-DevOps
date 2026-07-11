@@ -99,6 +99,8 @@ kubectl get secret db-secret -o jsonpath='{.data.DB_PASSWORD}' | base64 --decode
 | **kubernetes.io/ssh-auth** | SSH private keys |
 | **kubernetes.io/service-account-token** | Service account tokens |
 
+> 😂 **Fun Fact / Joke:** Base64 encoding is like hiding your diary under your mattress and telling everyone 'it's locked!' — your little brother found it in 2 seconds. Use real encryption, Ravi! This isn't a Bollywood spy movie! 🕵️😂
+
 ---
 
 ## 🧠 Important Concepts

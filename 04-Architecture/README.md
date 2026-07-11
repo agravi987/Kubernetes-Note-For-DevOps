@@ -92,6 +92,8 @@ What etcd stores:
 
 > ⚠️ **If etcd dies, the cluster is blind!** Always back up etcd in production.
 
+> 😄 **Joke:** etcd is like that one relative who remembers EVERY argument from the last 15 family gatherings — every secret, every config, every mistake you made. Lose etcd and you're basically starting the family from scratch. 💾😅
+
 ---
 
 ### 3. 📋 Scheduler (kube-scheduler)

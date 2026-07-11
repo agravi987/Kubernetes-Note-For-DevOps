@@ -201,4 +201,6 @@
 9. **Understand PV/PVC/StorageClass** relationship
 10. **Practice explaining concepts simply** — if you can explain it to a beginner, you truly understand it
 
+> 😄 **Joke:** Pro tip for K8s interviews: when asked a question you don't know, just say "It depends on the use case" — technically correct, the best kind of correct. Works better than saying "my laptop doesn't support Kubernetes" 🎤😄
+
 > *"Ravi, you've covered ALL the fundamentals now. The key to a great Kubernetes interview is not memorizing — it's understanding. Know the WHY behind each concept, and you'll answer any question they throw at you. Go crush that interview! 🎤"*

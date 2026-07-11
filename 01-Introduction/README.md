@@ -168,6 +168,8 @@ Almost everyone! Here are some well-known companies:
 
 > 💡 **Fun fact:** Kubernetes was created by Google based on their internal system called **Borg**, which they used for 15+ years. They open-sourced it in 2014 and donated it to the CNCF (Cloud Native Computing Foundation).
 
+> 🎉 **Fun Fact / Joke:** Kubernetes is like an Indian joint family — the head of the family (Control Plane) decides where everyone lives, how much food (resources) each person gets, and if someone slacks off, they're immediately replaced. Very efficient, very dramatic! 👨‍👩‍👧‍👦
+
 ---
 
 ## 🔄 Kubernetes vs. Other Tools

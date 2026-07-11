@@ -242,6 +242,8 @@ minikube   Ready    control-plane   5m    v1.28.3
 └─────────────────────────────────────────┘
 ```
 
+> 🎉 **Fun Fact / Joke:** Installing Kubernetes for the first time is like making momos at home — you watch YouTube tutorials, the first batch looks terrible, the filling spills everywhere, but somehow by the 3rd try, you've got something that works! 🥟
+
 ---
 
 ## 🧠 Key Components

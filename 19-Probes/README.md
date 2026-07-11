@@ -157,6 +157,8 @@ exec:
     - /tmp/healthy
 ```
 
+> 🚪😂 **Fun Fact / Joke:** A Liveness Probe without proper timeout is like your Indian mom checking if you're sleeping — she opens the door, closes it, opens it again, checks if you're really sleeping, and then checks one more time just to be sure. LET THE POD BREATHE!
+
 ### Probe Timing
 
 ```yaml

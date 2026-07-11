@@ -122,6 +122,8 @@ kubectl exec -it <pod-name> -- /bin/bash
 kubectl exec -it <pod-name> -- sh    # for Alpine/minimal containers
 ```
 
+> 😄 **Joke:** Learning kubectl is like learning to use Google Pay — at first you're confused, then you become addicted, and suddenly you can't imagine life without it. 'kubectl get pods' hits different after the 1000th time! 📱
+
 ---
 
 ### 🚀 Working with Deployments

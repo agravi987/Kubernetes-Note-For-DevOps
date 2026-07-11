@@ -97,6 +97,8 @@ spec:
 | **Forbid** | Skip new Job if previous still running |
 | **Replace** | Cancel running Job, start new one |
 
+> ⏰😴 **Joke:** A CronJob without concurrencyPolicy is like setting 10 alarms for 6 AM — they all go off, you snooze all of them, and now you're late anyway. Use concurrencyPolicy: Forbid and sleep peacefully!
+
 ### Cron Schedule Syntax
 
 ```

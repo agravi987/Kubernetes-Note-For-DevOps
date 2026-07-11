@@ -89,6 +89,8 @@ Needed replicas = ceil(2 × (140/70)) = ceil(4) = 4
 HPA scales from 2 → 4 replicas
 ```
 
+> 😄 **Joke:** HPA is like an Indian cricket captain — when the batting is going well (low CPU), he keeps the same team. When wickets fall (high CPU), he calls in the next batsman (pod) immediately! Kohli-level auto-scaling! 🏏💪
+
 ---
 
 ## 🧠 Important Concepts

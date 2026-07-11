@@ -158,6 +158,8 @@ During update:
   → Always at least 3 pods running! ✅
 ```
 
+> 🔥 **Fun Fact / Joke:** Using :latest tag in production is like ordering 'surprise biryani' from a roadside stall — sometimes you get chicken, sometimes you get... something else entirely. Always order (pin) what you know! 🍚😂
+
 ### Recreate Strategy (All at Once)
 
 ```yaml

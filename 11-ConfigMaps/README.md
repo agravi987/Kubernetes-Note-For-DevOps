@@ -135,6 +135,8 @@ spec:
 └── LOG_LEVEL
 ```
 
+> 📝 **Fun Fact / Joke:** Hardcoding config in your Docker image is like writing your WiFi password on the main gate of your society — sure, convenient, but now the entire colony is on your network! ConfigMaps exist for a reason! 📝📶
+
 ---
 
 ## 📋 Best Practices

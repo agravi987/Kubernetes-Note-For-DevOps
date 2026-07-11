@@ -163,6 +163,8 @@ roleRef:
   apiGroup: rbac.authorization.k8s.io
 ```
 
+> 😄 **Joke:** Giving everyone cluster-admin access is like giving your entire pg (paying guest) the master key to the kitchen fridge — sure, trust is great, but someone WILL eat your biryani at 2 AM. Guard those permissions! 🍛🔐
+
 ---
 
 ## 📚 kubectl Commands
