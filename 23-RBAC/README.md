@@ -2,6 +2,14 @@
 
 > *"Ravi, you wouldn't give every employee the same key card at your office, right? The intern doesn't need access to the CEO's office. RBAC in Kubernetes works the same way — it controls WHO can do WHAT on WHICH resources. Security is not optional! 🔐"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~8 min | ⭐⭐⭐ Advanced | Security |
+
+</div>
+
 ---
 
 ## 🤔 What is RBAC?

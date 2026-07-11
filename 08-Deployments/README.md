@@ -2,6 +2,14 @@
 
 > *"Ravi, THIS is the resource you'll use 90% of the time! Deployments are the golden standard for running applications in Kubernetes. They manage ReplicaSets, handle rolling updates, support rollbacks, and make your life easy. Let's master it!"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~12 min | ⭐⭐ Intermediate | Core Workloads |
+
+</div>
+
 ---
 
 ## 🤔 What is a Deployment?

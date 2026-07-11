@@ -2,6 +2,14 @@
 
 > *"Ravi, if Kubernetes is the brain, kubectl is your hands! This is the tool you'll use EVERY. SINGLE. DAY. Let's master it."*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~12 min | ⭐⭐ Intermediate | Foundation |
+
+</div>
+
 ---
 
 ## 🤔 What is kubectl?

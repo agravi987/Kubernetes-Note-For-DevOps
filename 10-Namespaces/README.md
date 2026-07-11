@@ -2,6 +2,14 @@
 
 > *"Ravi, imagine a big office building with 100 companies. Without walls and floors, it'd be chaos! Namespaces are those walls — they divide your cluster into virtual sections so teams, projects, and environments don't collide. Organization = Sanity! 🧘"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~7 min | ⭐ Beginner | Networking |
+
+</div>
+
 ---
 
 ## 🤔 What is a Namespace?
@@ -147,7 +155,7 @@ Namespaces provide:
 └── NetworkPolicy   → Can restrict traffic between namespaces
 ```
 
-> ⚠️ **Namespaces are NOT security boundaries by default!** Pods in different namespaces can still communicate. Use NetworkPolicies for actual isolation.
+> ⚠️ **Warning:** Namespaces are NOT security boundaries by default! Pods in different namespaces can still communicate. Use NetworkPolicies for actual isolation.
 
 ### Namespace Communication
 

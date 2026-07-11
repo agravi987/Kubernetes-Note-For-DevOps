@@ -2,6 +2,14 @@
 
 > *"Ravi, imagine you need a log collector running on EVERY single node in your cluster. One per node. No more, no less. If a new node joins, automatically deploy there. If a node leaves, clean up. That's EXACTLY what DaemonSets do!"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~5 min | ⭐⭐ Intermediate | Specialized Workloads |
+
+</div>
+
 ---
 
 ## 🤔 What is a DaemonSet?

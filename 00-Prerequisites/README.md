@@ -2,6 +2,14 @@
 
 > *"Hey Ravi, before we jump into Kubernetes, let's make sure our basics are solid. Think of this as stretching before a workout — skip it and you'll pull a muscle later!"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~8 min | ⭐ Beginner | Foundation |
+
+</div>
+
 ---
 
 ## 🖥️ Linux / Terminal Basics
@@ -77,7 +85,7 @@ metadata:
     app: web
 ```
 
-> 🔥 **Ravi, remember:** 90% of Kubernetes bugs are YAML indentation issues. Always double-check!
+> 🔑 **Remember:** 90% of Kubernetes bugs are YAML indentation issues. Always double-check!
 
 > 😄 **Joke:** Why do Indian developers love dark mode? Because light attracts bugs — and we already have enough bugs in our code after debugging YAML indentation at 2 AM while drinking our 5th chai! ☕🐛
 
@@ -160,7 +168,7 @@ RUN npm install
 CMD ["node", "server.js"]
 ```
 
-> 💡 **Ravi, don't worry!** You don't need to master Docker before learning Kubernetes. Just understand the basics — images, containers, and Dockerfiles.
+> 💡 **Tip:** Don't worry! You don't need to master Docker before learning Kubernetes. Just understand the basics — images, containers, and Dockerfiles.
 
 ---
 

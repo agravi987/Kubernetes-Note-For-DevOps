@@ -2,6 +2,14 @@
 
 > *"Ravi, traffic to your app isn't constant. At midnight it's quiet, at lunch it's busy, during a sale it goes CRAZY. You could manually scale... or you could let HPA do it automatically! It watches your metrics and scales pods up/down. Like magic! 🪄"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~7 min | ⭐⭐⭐ Advanced | Operations |
+
+</div>
+
 ---
 
 ## 🤔 What is HPA?
@@ -97,7 +105,7 @@ HPA scales from 2 → 4 replicas
 
 ### Metrics Server Dependency
 
-> ⚠️ HPA requires **Metrics Server** to be installed! Without it, HPA can't see CPU/memory usage.
+> ⚠️ **Warning:** HPA requires **Metrics Server** to be installed! Without it, HPA can't see CPU/memory usage.
 
 ```bash
 # Check if metrics-server is installed

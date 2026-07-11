@@ -2,6 +2,14 @@
 
 > *"Ravi, never hardcode configuration in your Docker images! That's a rookie mistake. ConfigMaps let you separate config from code — just like .env files do in regular development. Clean, safe, and flexible! 🧹"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~6 min | ⭐⭐ Intermediate | Configuration |
+
+</div>
+
 ---
 
 ## 🤔 What is a ConfigMap?

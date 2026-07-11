@@ -2,6 +2,14 @@
 
 > *"Hey Ravi, imagine you have 1000 boxes in a warehouse. Without labels, finding the right box is a nightmare. Labels and Selectors are Kubernetes' way of organizing and finding resources. Simple concept, MASSIVE impact!"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~8 min | ⭐ Beginner | Foundation |
+
+</div>
+
 ---
 
 ## 🤔 What are Labels?
@@ -113,7 +121,7 @@ metadata:
     app.kubernetes.io/managed-by: kubectl
 ```
 
-> 💡 **Ravi, you don't HAVE to use these conventions**, but they're useful in larger teams for consistency.
+> 💡 **Tip:** You don't HAVE to use these conventions, but they're useful in larger teams for consistency.
 
 ---
 
@@ -208,7 +216,7 @@ spec:
           image: nginx:1.25
 ```
 
-> ⚠️ **Critical Rule, Ravi:** `spec.selector.matchLabels` MUST match `spec.template.metadata.labels`. If they don't match, Kubernetes will reject the deployment!
+> ⚠️ **Warning:** `spec.selector.matchLabels` MUST match `spec.template.metadata.labels`. If they don't match, Kubernetes will reject the deployment!
 
 ### Service Selecting Pods
 

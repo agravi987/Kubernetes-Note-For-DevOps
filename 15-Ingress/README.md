@@ -2,6 +2,14 @@
 
 > *"Ravi, Services give your pods an IP inside the cluster. But how do users on the internet reach your app? Ingress! It's the traffic cop that routes external HTTP/HTTPS requests to the right services. Essential for any web app! 🚦"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~7 min | ⭐⭐ Intermediate | Networking |
+
+</div>
+
 ---
 
 ## 🤔 What is Ingress?

@@ -2,6 +2,14 @@
 
 > *"Alright Ravi, time to get our hands dirty! Let's set up Kubernetes on your machine. Don't worry — we'll start simple and work our way up."*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~8 min | ⭐ Beginner | Foundation |
+
+</div>
+
 ---
 
 ## 🤔 What is it?
@@ -209,7 +217,7 @@ NAME       STATUS   ROLES           AGE   VERSION
 minikube   Ready    control-plane   5m    v1.28.3
 ```
 
-> 💡 **Ravi, if you see "Ready" status, you're good to go!** 🎉
+> 💡 **Tip:** If you see "Ready" status, you're good to go! 🎉
 
 ---
 

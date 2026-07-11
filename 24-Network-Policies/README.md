@@ -2,6 +2,14 @@
 
 > *"Ravi, by default in Kubernetes, EVERY pod can talk to EVERY other pod. In a small dev cluster, fine. In production with sensitive databases? TERRIFYING! Network Policies are like firewalls for your pods — they control who can talk to whom. Essential for security! 🔒"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~8 min | ⭐⭐⭐ Advanced | Networking |
+
+</div>
+
 ---
 
 ## 🤔 What are Network Policies?
@@ -167,7 +175,7 @@ ingress:
 
 ## ⚠️ Prerequisites
 
-> ⚠️ **Network Policies require a CNI plugin that supports them!**
+> ⚠️ **Warning:** Network Policies require a CNI plugin that supports them!
 
 | CNI Plugin | Supports NetworkPolicy? |
 |-----------|----------------------|

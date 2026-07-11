@@ -2,6 +2,14 @@
 
 > *"Ravi, this is the grand finale! Here are the most commonly asked Kubernetes interview questions, organized by topic. Use this as a revision sheet before your interviews. You've got this! 💪"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~8 min | ⭐⭐⭐ Advanced | Wrap-Up |
+
+</div>
+
 ---
 
 ## 🏗️ Architecture

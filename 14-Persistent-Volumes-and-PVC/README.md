@@ -2,6 +2,14 @@
 
 > *"Ravi, emptyDir is great for temp data, but what about your database? User uploads? You need storage that LIVES beyond pod restarts. PersistentVolumes (PV) and PersistentVolumeClaims (PVC) are how Kubernetes manages durable storage. This is critical for stateful apps!"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~8 min | ⭐⭐ Intermediate | Storage |
+
+</div>
+
 ---
 
 ## 🤔 What are PV and PVC?

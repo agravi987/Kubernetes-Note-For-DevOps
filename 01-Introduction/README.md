@@ -2,6 +2,14 @@
 
 > *"Hey Ravi! So you've heard everyone talking about Kubernetes and want to know what the hype is about? Let me break it down for you — no jargon, no fluff, just the real stuff."*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~10 min | ⭐ Beginner | Foundation |
+
+</div>
+
 ---
 
 ## 🤔 What is Kubernetes?

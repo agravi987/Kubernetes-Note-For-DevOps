@@ -2,6 +2,14 @@
 
 > *"Ravi, how does Kubernetes know if your app is actually working? Not just running — but actually healthy and ready to serve traffic? PROBES! They're like regular health checkups for your containers. Critical for production reliability! 🏥"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~8 min | ⭐⭐ Intermediate | Operations |
+
+</div>
+
 ---
 
 ## 🤔 What are Probes?

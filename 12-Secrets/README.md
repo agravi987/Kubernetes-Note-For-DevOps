@@ -2,6 +2,14 @@
 
 > *"Ravi, passwords, API keys, TLS certificates — you NEVER want these hardcoded in your images or lying around in plain text. Kubernetes Secrets keep your sensitive data... well, secret! But there are important caveats you need to know. Let's dive in!"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~7 min | ⭐⭐ Intermediate | Configuration |
+
+</div>
+
 ---
 
 ## 🤔 What is a Secret?

@@ -2,6 +2,14 @@
 
 > *"Ravi, most Kubernetes workloads run forever (Deployments, DaemonSets). But what about tasks that should run once and finish? Like a database migration, a batch report, or a nightly backup? That's what Jobs and CronJobs do!"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~7 min | ⭐⭐ Intermediate | Specialized Workloads |
+
+</div>
+
 ---
 
 ## 🤔 What are Jobs and CronJobs?

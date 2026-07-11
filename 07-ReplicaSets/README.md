@@ -2,6 +2,14 @@
 
 > *"Ravi, remember how we said bare Pods are dangerous? What if one crashes and nobody replaces it? That's where ReplicaSets come in — they're your bodyguards that make sure the right number of pods are ALWAYS running! 🛡️"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~6 min | ⭐⭐ Intermediate | Core Workloads |
+
+</div>
+
 ---
 
 ## 🤔 What is a ReplicaSet?
@@ -144,7 +152,7 @@ Deployment (wraps ReplicaSet):
 
 > 😄 **Joke:** A ReplicaSet without a Deployment is like an Indian mom without a pressure cooker — she can still cook, but there's no backup plan, no rolling updates, and definitely no quick recovery when things go wrong! 🍛
 
-> 💡 **Ravi, you almost NEVER create ReplicaSets directly.** Deployments create ReplicaSets automatically. But you need to understand ReplicaSets because they're what actually manages the pods!
+> 💡 **Tip:** You almost NEVER create ReplicaSets directly. Deployments create ReplicaSets automatically. But you need to understand ReplicaSets because they're what actually manages the pods!
 
 ---
 

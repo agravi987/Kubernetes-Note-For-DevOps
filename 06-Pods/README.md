@@ -2,6 +2,14 @@
 
 > *"Ravi, this is where the magic starts! Pods are the SMALLEST thing you can create in Kubernetes. Everything else — Deployments, Services, StatefulSets — they all manage Pods. Let's understand them inside out."*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~10 min | ⭐⭐ Intermediate | Core Workloads |
+
+</div>
+
 ---
 
 ## 🤔 What is a Pod?

@@ -2,6 +2,14 @@
 
 > *"Ravi, this is the BIG one! Understanding Kubernetes architecture is like understanding how a city works. Once you get this, everything else falls into place. Let's break it down piece by piece."*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~15 min | ⭐⭐ Intermediate | Foundation |
+
+</div>
+
 ---
 
 ## 🤔 What is it?

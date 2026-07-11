@@ -2,6 +2,14 @@
 
 > *"Ravi, knowing Kubernetes features is one thing. Using them RIGHT is another. These best practices come from real-world production experience. Follow them and you'll avoid 90% of common pitfalls! 💪"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~7 min | ⭐⭐⭐ Advanced | Wrap-Up |
+
+</div>
+
 ---
 
 ## 🏗️ General Best Practices

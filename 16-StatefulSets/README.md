@@ -2,6 +2,14 @@
 
 > *"Ravi, Deployments are great for stateless apps like web servers. But databases? They need stable network names, persistent storage, and ordered deployment. That's what StatefulSets are for! Think of them as Deployments for stateful apps! 🐘"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~7 min | ⭐⭐⭐ Advanced | Specialized Workloads |
+
+</div>
+
 ---
 
 ## 🤔 What is a StatefulSet?

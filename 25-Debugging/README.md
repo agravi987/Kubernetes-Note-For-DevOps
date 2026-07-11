@@ -2,6 +2,14 @@
 
 > *"Ravi, things WILL go wrong in Kubernetes. Pods crash, services don't respond, deployments get stuck. Knowing how to debug quickly is what separates a junior from a senior. Let's build your debugging toolkit! 🔍"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~10 min | ⭐⭐⭐ Advanced | Wrap-Up |
+
+</div>
+
 ---
 
 ## 🤔 What is it?

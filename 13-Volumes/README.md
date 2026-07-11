@@ -2,6 +2,14 @@
 
 > *"Ravi, remember how we said Pods are ephemeral? When a pod dies, EVERYTHING inside it is gone — data, logs, temp files. That's fine for stateless apps, but what about databases? That's where Volumes come in! They give your pods persistent or shared storage. 💾"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~7 min | ⭐⭐ Intermediate | Storage |
+
+</div>
+
 ---
 
 ## 🤔 What is a Volume?
@@ -73,7 +81,7 @@ volumes:
       type: Directory
 ```
 
-> ⚠️ **hostPath is dangerous!** Containers can access the host filesystem. Use only for specific system-level use cases.
+> ⚠️ **Warning:** hostPath is dangerous! Containers can access the host filesystem. Use only for specific system-level use cases.
 
 #### 3. configMap / secret 📁
 
@@ -151,7 +159,7 @@ volumes:
       sizeLimit: 64Mi
 ```
 
-> 💡 **Use `medium: Memory`** for high-speed temp storage. Data is lost when pod restarts AND counts against memory limits.
+> 💡 **Tip:** Use `medium: Memory` for high-speed temp storage. Data is lost when pod restarts AND counts against memory limits.
 
 > 🍺 **Fun Fact / Joke:** Using emptyDir for important data is like writing your exam answers on a rough page during a power cut — it works until the light comes back and you realize the page flew away. Use PVC for anything that matters! ✏️💨
 

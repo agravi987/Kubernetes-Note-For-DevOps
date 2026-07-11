@@ -2,6 +2,14 @@
 
 > *"Ravi, imagine a shared office with no assigned desks. One person takes ALL the chairs, and nobody else can sit. That's what happens without resource management! Kubernetes lets you set limits so every pod gets what it needs and nobody hogs everything! 📊"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~7 min | ⭐⭐ Intermediate | Operations |
+
+</div>
+
 ---
 
 ## 🤔 What is Resource Management?
@@ -104,7 +112,7 @@ Exceed limit?       N/A             CPU: throttled
 Scheduled based on? ✅ Yes          ❌ No
 ```
 
-> 🔑 **Key insight, Ravi:** Kubernetes schedules pods based on **requests**, NOT limits. If you set high limits but low requests, Kubernetes might pack too many pods on one node!
+> 🔑 **Remember:** Kubernetes schedules pods based on **requests**, NOT limits. If you set high limits but low requests, Kubernetes might pack too many pods on one node!
 
 > 📱💸 **Joke:** Not setting resource limits is like letting your cousin use your phone 'for just one game' — 3 hours later, your storage is full, your battery is dead, and somehow your Jio data is finished. SET THOSE LIMITS!
 

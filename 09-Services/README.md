@@ -2,6 +2,14 @@
 
 > *"Ravi, Pods are ephemeral — they die, get new IPs, move between nodes. So how do other apps (or users) find them? SERVICES! They give your pods a stable IP and DNS name that never changes. This is networking magic! 🪄"*
 
+<div align="center">
+
+| 📖 Reading Time | 🎯 Difficulty | 🏷️ Category |
+|:---:|:---:|:---:|
+| ~10 min | ⭐⭐ Intermediate | Networking |
+
+</div>
+
 ---
 
 ## 🤔 What is a Service?
